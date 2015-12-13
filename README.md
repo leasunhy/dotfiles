@@ -7,3 +7,7 @@ Symlink these files to proper paths, e.g (assume that this git repo is placed at
 ln -s ~/dot-files/vimrc ~/.vimrc
 ```
 
+## Dependencies
+* oh-my-zsh
+* vim-vundle (for bootstrap)
+
