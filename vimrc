@@ -114,8 +114,9 @@ if !exists(":DiffOrig")
 endif
 
 " [styles]
-colo solarized
+set t_Co=256
 set background=dark
+colo solarized
 " colo tomorrownighteighties
 set nu
 set ts=4
@@ -126,7 +127,6 @@ set cindent
 set hlsearch
 set expandtab
 
-set t_Co=256
 set ttimeoutlen=50
 
 " [Airline]
