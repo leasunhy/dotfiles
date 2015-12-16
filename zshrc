@@ -102,3 +102,6 @@ alias xcl="xclip -in -selection clipboard"
 # zsh syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# virtualenv wrapper
+source /usr/bin/virtualenvwrapper.sh
+
