@@ -88,7 +88,12 @@ alias v='vim'
 alias r720-tunnel="ssh -TND 4711 r720"
 alias vact="source bin/activate"
 
-#export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true'
+# java options
+#   for better font rendering
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+_SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS"
+unset _JAVA_OPTIONS
+alias java='java "$_SILENT_JAVA_OPTIONS"'
 
 # for 256 colors to work in tmux
 alias tmux="TERM=screen-256color tmux"
