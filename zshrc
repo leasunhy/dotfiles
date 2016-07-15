@@ -90,17 +90,17 @@ alias vact="source bin/activate"
 
 # java options
 #   for better font rendering
-export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
+export _JAVA_OPTIONS=''
 _SILENT_JAVA_OPTIONS="$_JAVA_OPTIONS"
 unset _JAVA_OPTIONS
-alias java='java "$_SILENT_JAVA_OPTIONS"'
+alias java="java $_SILENT_JAVA_OPTIONS"
 
 # for 256 colors to work in tmux
 alias tmux="TERM=screen-256color tmux"
 alias emacs="TERM=screen-256color emacs -nw"
 alias gemacs="/usr/bin/emacs"
 # tmuxinator completion
-source ~/.bin/tmuxinator.zsh
+#source ~/.bin/tmuxinator.zsh
 # xclip
 alias xcl="xclip -in -selection clipboard"
 

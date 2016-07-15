@@ -28,6 +28,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " All of your Plugins must be added before the following line
@@ -118,7 +119,7 @@ endif
 set t_Co=256
 set background=dark
 colo solarized
-" colo tomorrownighteighties
+" colo Tomorrow-Night-Bright
 set nu
 set ts=4
 set softtabstop=4
@@ -127,6 +128,10 @@ set autoindent
 set cindent
 set hlsearch
 set expandtab
+
+" adjust indentations of C++ scope declarations
+set cinoptions+=g0.5s
+set cinoptions+=h0.5s
 
 set ttimeoutlen=50
 
