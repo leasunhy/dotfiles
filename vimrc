@@ -30,6 +30,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -153,6 +154,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " [YCM]
 " don't show the preview window
 let g:ycm_add_preview_to_completeopt=0
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 set completeopt-=preview
 " python with virtualenv support
 py << EOF
@@ -183,4 +185,7 @@ command WQ wq
 
 " map <leader>jd to YCM's "jump to definition"
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
+
+set cino=g0.5s,h0.5s
+
 
