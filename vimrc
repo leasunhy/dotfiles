@@ -18,7 +18,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
@@ -139,10 +140,12 @@ set ttimeoutlen=50
 " [Airline]
 set laststatus=2
 set noshowmode
-let g:airline_left_sep=''
-let g:airline_right_sep=''
+"let g:airline_left_sep=''
+"let g:airline_right_sep=''
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#whitespace#enabled = 1
+let g:airline_theme = 'powerlineish'
 
 " [Syntastic]
 let g:syntastic_cpp_compiler_options = '-std=c++11'
