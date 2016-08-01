@@ -26,7 +26,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'jiangmiao/auto-pairs'
+"Plugin 'jiangmiao/auto-pairs'
+Plugin 'raimondi/delimitmate'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'chriskempson/vim-tomorrow-theme'
@@ -189,6 +190,7 @@ command WQ wq
 " map <leader>jd to YCM's "jump to definition"
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
-set cino=g0.5s,h0.5s
-
+" [delimitMate]
+let delimitMate_expand_cr = 1
+let delimitMate_excluded_regions = ""
 
